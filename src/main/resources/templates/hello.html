@@ -8,7 +8,10 @@
 </head>
 <body>
 <span id="test">this is html in templates!</span>
-
+<p th:text="'ID:'+${user.id}"></p><br>
+<p th:text="'name:'+${user.username}"></p><br>
+<p th:text="'age:'+${user.age}"></p>
+<p th:text="'address:'+${user.address}"></p>
 <button onclick="sayhello()">点击</button>
 </body>
 </html>
