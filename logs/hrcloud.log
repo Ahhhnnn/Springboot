@@ -1,0 +1,21 @@
+10:45:34.646 [] [] [main] INFO  c.h.attenddemo.AttenddemoApplication - Starting AttenddemoApplication on DESKTOP-648K7MK with PID 5988 (D:\Other\attenddemo\target\classes started by Administrator in D:\Other\attenddemo)
+10:45:34.651 [] [] [main] INFO  c.h.attenddemo.AttenddemoApplication - No active profile set, falling back to default profiles: default
+10:45:36.330 [] [] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:45:36.344 [] [] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:45:36.355 [] [] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:45:36.356 [] [] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+10:45:36.364 [] [] [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+10:45:36.364 [] [] [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+10:45:36.365 [] [] [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10:45:36.370 [] [] [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+10:45:36.480 [] [] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:45:36.480 [] [] [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1750 ms
+10:45:36.729 [] [] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:45:36.862 [] [] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:45:36.939 [] [] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:45:36.954 [] [] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:45:36.973 [] [] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:45:36.978 [] [] [main] INFO  c.h.attenddemo.AttenddemoApplication - Started AttenddemoApplication in 2.893 seconds (JVM running for 4.457)
+10:46:38.966 [] [] [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:46:38.966 [] [] [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:46:38.975 [] [] [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms

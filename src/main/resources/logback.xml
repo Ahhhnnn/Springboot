@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} [%X{current_thread_id}] [%X{current_user_name}] [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/hrcloud.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>logs/hrcloud-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each file should be at most 10MB, keep 60 days worth of history, but at most 2GB -->
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>2GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} [%X{current_thread_id}] [%X{current_user_name}] [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="diworkAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/diwork.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/diwork-%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!-- project default level -->
+    <logger name="org.springframework" level="INFO" />
+    <logger name="org.eclipse.jetty" level="INFO" />
+    <logger name="org.apache.ibatis.io" level="INFO"/>
+    <logger name="org.apache.http" level="INFO"/>
+    <logger name="org.hibernate" level="ERROR"/>
+    <!--log4jdbc -->
+    <logger name="jdbc.connection" level="DEBUG" />
+    <logger name="jdbc.audit" level="DEBUG" />
+    <logger name="jdbc.resultset" level="DEBUG" />
+    <logger name="jdbc.sqlonly" level="DEBUG" />
+    <logger name="jdbc.sqltiming" level="DEBUG" />
+
+    <root level="INFO">
+        <appender-ref ref="console" />
+        <appender-ref ref="rollingFile" />
+    </root>
+</configuration>
