@@ -20,4 +20,9 @@ public class IUserServiceImpl implements IUserService {
     public List<User> findAll() {
         return userDao.findAll();
     }
+
+    @Override
+    public int queryCount() {
+        return userDao.queryCount();
+    }
 }

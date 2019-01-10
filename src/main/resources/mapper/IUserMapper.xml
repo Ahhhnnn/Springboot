@@ -10,4 +10,7 @@
       select * from user
     </select>
 
+    <select id="queryCount" resultType="java.lang.Integer">
+        select count(*) from user
+    </select>
 </mapper>

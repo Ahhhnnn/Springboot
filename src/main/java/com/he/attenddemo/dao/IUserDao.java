@@ -10,4 +10,6 @@ public interface IUserDao {
     User loadById(String id);
 
     List<User> findAll();
+
+    int queryCount();
 }

@@ -8,4 +8,5 @@ public interface IUserService {
 
     public User loadById(String id);
     public List<User> findAll();
+    public int queryCount();
 }

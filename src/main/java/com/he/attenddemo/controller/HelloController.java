@@ -17,7 +17,7 @@ public class HelloController {
     @RequestMapping("/hi")
     private ModelAndView Hello(){
         ModelAndView modelAndView=new ModelAndView();
-        modelAndView.setViewName("hello");
+        modelAndView.setViewName("login");
         User user=userDao.loadById("1");
         modelAndView.addObject(user);
         return modelAndView;
