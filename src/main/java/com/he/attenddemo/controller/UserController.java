@@ -1,5 +1,6 @@
 package com.he.attenddemo.controller;
 
+import com.github.pagehelper.PageHelper;
 import com.he.attenddemo.dao.IUserDao;
 import com.he.attenddemo.dao.RedisDao;
 import com.he.attenddemo.service.IUserService;
@@ -24,7 +25,8 @@ public class UserController {
     }
 
     @RequestMapping("/findAll")
-    private List<User> findAll(){
+    private List<User> findAll(PageHelper pageHelper){
+        //PageHelper.startPage(1,10);
         return userService.findAll();
     }
 
@@ -34,4 +36,6 @@ public class UserController {
         log.error("####redis的value:"+redisDao.getValue(key));
         return redisDao.getValue(key);
     }
+
+
 }
