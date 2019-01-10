@@ -34,7 +34,7 @@
 
     <!-- project default level -->
     <logger name="org.springframework" level="INFO" />
-    <logger name="org.eclipse.jetty" level="INFO" />
+    <!--<logger name="org.eclipse.jetty" level="INFO" />-->
     <logger name="org.apache.ibatis.io" level="INFO"/>
     <logger name="org.apache.http" level="INFO"/>
     <logger name="org.hibernate" level="ERROR"/>
@@ -46,7 +46,7 @@
     <logger name="jdbc.sqltiming" level="DEBUG" />
 
     <root level="INFO">
-        <!--<appender-ref ref="console" />
-        <appender-ref ref="rollingFile" />-->
+        <appender-ref ref="console" />
+        <appender-ref ref="rollingFile" />
     </root>
 </configuration>
