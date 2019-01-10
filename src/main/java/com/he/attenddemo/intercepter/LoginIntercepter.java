@@ -14,7 +14,7 @@ public class LoginIntercepter implements HandlerInterceptor{
         log.error("#####拦截器执行");
         log.error("###session:"+request.getSession().getId());
         //从redis从取出sessionid 如果存在则通过，不通过转入登录界面
-        return false;
+        return true;
     }
 
     @Override
